@@ -240,6 +240,15 @@
   .awards { display:flex; flex-wrap:wrap; gap:14px; align-items:center; justify-content:center; margin-top:16px; }
   .awards img { height: 64px; width:auto; background: var(--navy); border-radius: 8px; padding: 8px 12px; }
   .opts.one { grid-template-columns: 1fr; }
+
+  /* centered hero (Shea 2026-11-17): headline, sub-headline, the form in the middle, information below */
+  .hero-c { text-align: center; padding-top: 52px; padding-bottom: 64px; }
+  .hero-c h1 { max-width: 26ch; margin: 0 auto 16px; text-wrap: balance; }
+  .hero-c .lede { margin: 0 auto 30px; max-width: 56ch; }
+  .hero-c .lab { margin-left: auto; margin-right: auto; }
+  .card-c { max-width: 580px; margin: 0 auto 36px; text-align: left; }
+  .ticks-c { max-width: 560px; margin: 0 auto 26px; text-align: left; }
+  .badges-c { justify-content: center; }
   .hrow .brand { height: 70px !important; width: auto; }
   .flogo { height: 80px !important; width: auto; background:none !important; padding:0 !important; }
   footer { background: #0F3550 !important; }
@@ -267,34 +276,29 @@
 </header>
 
 <div class="hero-wrap">
-<div class="inner hero">
-  <div class="hgrid">
-    <div>
-      <p class="lab">Kitchens &middot; Baths &middot; Additions &middot; Apex, NC</p>
-      <h1>Turn your house into <em>your forever home.</em></h1>
-      <p class="lede">Wake Remodeling is a design-build remodeler in Apex, NC. One accountable team, a fixed price set before construction begins and a 36-month workmanship warranty.</p>
-      <ul class="ticks">
+<div class="inner hero hero-c">
+  <p class="lab">Kitchens &middot; Baths &middot; Additions &middot; Apex, NC</p>
+  <h1>Turn your house into <em>your forever home.</em></h1>
+  <p class="lede">Wake Remodeling is a design-build remodeler in Apex, NC. One accountable team, a fixed price set before construction begins and a 36-month workmanship warranty.</p>
+  <div class="card card-c">
+    <div class="ctop"><span class="cstep" id="stepLab">Step 1 of 6</span><span class="cpct" id="pct">17%</span></div>
+    <div class="track"><div class="fill" id="fill"></div></div>
+    <div id="stage"></div>
+    <div class="backrow"><button class="back" id="backBtn" type="button" hidden>&#8592; Back</button></div>
+    <div class="secure">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+      Takes about a minute. Our team follows up to set up your consultation.
+    </div>
+  </div>
+  <ul class="ticks ticks-c">
         <li><span class="ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>Fixed price</b> before construction begins.</span></li>
         <li><span class="ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>36-month warranty</b> on workmanship.</span></li>
         <li><span class="ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>4.9 on Google</b> from 48 reviews.</span></li>
         <li><span class="ck"><svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg></span><span><b>400+ homes</b> remodeled since 2008.</span></li>
-      </ul>
-      <div class="badges">
+  </ul>
+  <div class="badges badges-c">
         <span class="badge"><i>&#9679;</i> Apex, NC</span>
         <span class="badge"><i>&#9679;</i> Since 2008</span>
-      </div>
-    </div>
-
-    <div class="card">
-      <div class="ctop"><span class="cstep" id="stepLab">Step 1 of 6</span><span class="cpct" id="pct">17%</span></div>
-      <div class="track"><div class="fill" id="fill"></div></div>
-      <div id="stage"></div>
-      <div class="backrow"><button class="back" id="backBtn" type="button" hidden>&#8592; Back</button></div>
-      <div class="secure">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
-        Takes about a minute. Our team follows up to set up your consultation.
-      </div>
-    </div>
   </div>
 </div>
 </div>
